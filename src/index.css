@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  @apply antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
